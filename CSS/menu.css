@@ -1,0 +1,22 @@
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.menu1{
+    background-color: #5e5f5cc7;
+}
+
+.tipografia{
+    color: #664c34;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+footer{
+    margin-top: 600px;
+}
