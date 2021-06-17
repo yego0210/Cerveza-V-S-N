@@ -1,0 +1,36 @@
+.section1{
+    margin-top: 105px;
+    height: 475px;
+
+}
+
+.section1 h1{
+    font-size: 50px;
+    font-family: 'Gruppo', cursive;
+    color: #89640a;
+}
+
+.clara{
+    background-color: #9b6870;
+}
+
+.artclara h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gruppo', cursive;
+}
+
+.artclara p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gruppo', cursive;
+}
+
+.imgclara{
+   height: 300px;
+   margin-top: 50px;
+}
