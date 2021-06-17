@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -6,17 +6,17 @@ header{
     z-index: 200;
 }
 
-.menu1{
+.menu1 {
     background-color: #dbc28a;
+    /**/
 }
 
-.tipografia{
+.tipografia {
     color: #664c34;
     font-size: 20px;
     text-decoration: none;
-
 }
 
-footer{
+footer {
     margin-top: 600px;
 }
