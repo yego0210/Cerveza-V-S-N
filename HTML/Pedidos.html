@@ -87,10 +87,10 @@
 
     <section class="contenedor">
         
-      <div class="container text-center row-12 conte ">
+      <div class="container text-center row-12  agenda  ">
         <form class="row g-3 " >
-        <div class="row">
-          <div class="col">
+        <div class="row ">
+          <div class="col-12 col-sm-12  ">
             <h1>AGENDA YA TU PEDIDO</h1>
             <p>
               Llena el formulario con tus datos y la información de tu pedido,
@@ -102,13 +102,13 @@
       </div>
 
       <!-- input -->
-      <div class="container conte">
+      <div class="container conte col-11 col-lg-8 ">
         <!-- Empieza nombre nombre-->
-        <div class="row mt-5">
-          <div class="col-6">
+        <div class="row ">
+          <div class="col-12 col-sm-6 ">
             <h6>¿listo para empezar tu experiencia</h6>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-6 ">
               <h5>Nombre <span style="color: red;">*</span></h5>
             <input
               type="text"
@@ -116,36 +116,37 @@
               placeholder="¿Como te llamas?"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
+              required
             />
           </div>
         </div>
         <!-- termina nombre nombre-->
 
         <div class="row mt-5">  <!--Empieza los barriles-->
-          <div class="col">
+          <div class="col-11 col-sm-6">
             <h6>Quieres pedir</h6>
             <p>
               Si deseas más de un barril, puedes agregar el siguiente barril en
               la última pregunta.
             </p>
           </div>
-          <div class="col">
+          <div class="col-11 col-sm-6 ">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Botellas
                 </label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" required name="flexRadioDefault" id="flexRadioDefault2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Barril 19 Litros
                 </label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" required name="flexRadioDefault" id="flexRadioDefault2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Barril 50 Litros
                 </label>
@@ -160,42 +161,43 @@
             <h6>¿Cuantas cervezas deseas de cada una?</h6>
             <p>Recuerda que en el caso de botellas el pedido es de mínimo doce (12) cervezas totales.</p>
         </div>
-        <div class="row">
-        <div class="col-4">
-            <div>
+        <div class="row text-center">
+        <div class="col-12 col-sm-4 ">
+            <div class=" ">
                 <h5>Rubia</h5>
-                <button class="btn" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                <button class="btn-input" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                <input class="ipt" type="text" value="0" id="item" name="item" disabled>
+                <input class="ipt" type="text" value="0" id="item" name="item" required>
                 
-                <button class="btn" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                <button class="btn-input" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-sm-4"">
             <div>
                 <h5>Morena</h5>
-                <button class="btn" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                <button class="btn-input" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                <input class="ipt" type="text" value="0" id="itemm" name="item" disabled>
+                <input class="ipt" type="text" value="0" id="itemm" name="item" required>
                 
-                <button class="btn" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                <button class="btn-input" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-sm-4">
             <div>
                 <h5>Clara</h5>
-                <button class="btn" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                <button class="btn-input" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                <input class="ipt" type="text" value="0" id="item" name="item" disabled>
+                <input class="ipt" type="text" value="0" id="item" name="item" required>
                 
-                <button class="btn" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                <button class="btn-input" id="desminuir" type="button" onclick="incrementar()"class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
             </div>
         </div>
     </div>
     <div class="row mt-5">
         <div class="col">
             <h5>Total Cervezas</h5>
+            <p>0</p>
         </div>
     </div>
 
@@ -205,7 +207,7 @@
             <span style="color: red;">*</span></h5>
             <div class="input-group">
                 
-                <textarea class="form-control" aria-label="With textarea" placeholder="Escriba tu direccion de entrega"></textarea>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Escriba tu direccion de entrega" required></textarea>
               </div>
         </div>
     </div>
@@ -213,7 +215,7 @@
     <div class="row mt-3">
         <div class="col">
             <h5>¿A qué teléfono podemos contactarte?   necesario <span style="color: red;">*</span></h5>
-            <input type="text" class="form-control" placeholder="Celular o telefono" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <input type="text" class="form-control" placeholder="Celular o telefono" aria-label="Example text with button addon" aria-describedby="button-addon1" required>
 
         </div>
     </div>
@@ -223,12 +225,12 @@
             <h5>¿Algo más que debamos saber? <span style="color: red;">*</span></h5>
             <div class="input-group">
                 
-                <textarea class="form-control" placeholder="nos puedes contar algun requerimiento especifico de tu pedido, o algun detalle de la dirección que debamos anotar" aria-label="With textarea"></textarea>
+                <textarea class="form-control" placeholder="nos puedes contar algun requerimiento especifico de tu pedido, o algun detalle de la dirección que debamos anotar" aria-label="With textarea" required></textarea>
               </div>
         </div>
     </div>
 
-    <button class="mt-5" onclick="makeAnOrder()">Realizar Pedido</button>
+    <button type="submit" class="btn btn-lg btn-dark mt-5 mb-5"  onclick="makeAnOrder()">ENVIAR PEDIDO</button>
     </div>
 
        </form>
