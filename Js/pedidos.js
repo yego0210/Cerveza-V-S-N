@@ -11,7 +11,7 @@ function miFunc() {
 
 function decrementar() {
     valor = document.getElementById("item");
-    if (valor.value > 01) valor.value--;
+    if (valor.value > 00) valor.value--;
 }
 
 function makeAnOrder() {
@@ -33,7 +33,7 @@ function miFunc() {
 
 function decrementarr() {
     valor = document.getElementById("itemm");
-    if (valor.value > 01) valor.value--;
+    if (valor.value > 00) valor.value--;
 }
 
 // *************CLARA********************
@@ -49,7 +49,7 @@ function miFunc() {
 
 function decrementars() {
     valor = document.getElementById("items");
-    if (valor.value > 01) valor.value--;
+    if (valor.value > 00) valor.value--;
 }
 
 function totalCervezas() {
