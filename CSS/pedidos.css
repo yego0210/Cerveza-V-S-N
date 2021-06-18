@@ -1,0 +1,42 @@
+.contenedor {
+    margin-top: 300px;
+}
+
+.btn-input {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+}
+
+.ipt {
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+}
+
+.conte {
+    background-color: #FFF2CC;
+    /* width: 820px; */
+    /* height: 950px;  */
+    padding-top: 20px;
+}
+
+section {
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.agenda {
+    background-color: #000000;
+    color: white;
+    padding-top: 100px;
+}
+
+.realizar {
+    border: 0;
+    height: 50px;
+    width: 150px;
+    bor
+}

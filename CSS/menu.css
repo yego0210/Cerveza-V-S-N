@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -18,3 +18,19 @@ header{
 
 
 }
+
+.menu1 {
+    background-color: #dbc28a;
+    /**/
+}
+
+.tipografia {
+    color: #664c34;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 600px;
+}
+
