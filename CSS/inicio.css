@@ -7,6 +7,11 @@
     width: 80%;
 } 
 
+.artsection1:hover{
+    transition: 1s;
+    transform: translateY(-5px);
+}
+
 .imgsection1 img{
     position: relative;
     top: 0;
