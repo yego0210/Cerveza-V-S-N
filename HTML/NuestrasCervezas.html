@@ -11,6 +11,9 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="../CSS/menu.css">
   <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/NuestrasCervezas.css">
   <title>Cerveceria</title>
 </head>
 
@@ -19,34 +22,36 @@
   <header>
     <nav class="navbar navbar-expand-lg  menu1">
       <div class="container-fluid">
-        <div >
+        <div>
 
           <a class="navbar-brand" href="../HTML/index.html">
-            <img src="../logos/SVG/beer-logo.svg" alt="" width="100" height="100">
+            <img src="../logos/SVG/logo.svg" alt="LogoSanNicolas" width="100" height="100">
+            <img src="../logos/SVG/Titulo.svg" alt="LogoSanNicolas" width="100" height="100">
           </a>
 
         </div>
-        <a class="navbar-brand text-center tipografia link-light" href="#">Cerveceria <br> Valle de San Nicolas</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <a class="navbar-brand text-center tipografia link-dark" href="#">Cerveceria <br> San Nicolas</a> -->
+        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarNavDropdown">
           <ul class="navbar-nav ">
             <li class="nav-item ms-3 ">
-              <a class="nav-link  tipografia link-light" aria-current="page" href="../HTML/index.html">Inicio</a>
+              <a class="nav-link  tipografia link-dark" aria-current="page" href="../HTML/index.html">Inicio</a>
             </li>
             <li class="nav-item ms-3">
-              <a class="nav-link tipografia link-light" href="../HTML/NuestrasCervezas.html">Nuestras Cervezas</a>
+              <a class="nav-link tipografia link-dark" href="../HTML/NuestrasCervezas.html">Nuestras Cervezas</a>
             </li>
             <li class="nav-item ms-3">
-              <a class="nav-link tipografia link-light" href="../HTML/Pedidos.html">Pedidos</a>
+              <a class="nav-link tipografia link-dark" href="../HTML/Pedidos.html">Pedidos</a>
             </li>
             <li class="nav-item ms-3">
-              <a class="nav-link tipografia link-light" href="../HTML/QuienesSomos.html">Quiénes somos</a>
+              <a class="nav-link tipografia link-dark" href="../HTML/QuienesSomos.html">Quiénes somos</a>
             </li>
             <li class="nav-item ms-3">
-              <a class="nav-link tipografia link-light" href="../HTML/Contacto.html">Contacto</a>
+              <a class="nav-link tipografia link-dark" href="../HTML/Contacto.html">Contacto</a>
             </li>
 
           </ul>
@@ -55,20 +60,50 @@
     </nav>
   </header>
 
+  <!-- section 1 -->
 
-
-
-
-  <footer class=" container-fluid">
-    <div class="imgfooter">
-      <a href=""><img src="../logos/SVG/Facebook.svg" alt="FacebookLogo"></a>
-      <a href=""><img src="../logos/SVG/Instagram.svg" alt="InstagramLogo"></a>
-      <a href=""><img src="../logos/SVG/Twitter.svg" alt="TwitterLogo"></a>
+  <section class="section1 container-fluid">
+    <div>
+      <h1>
+        Conoce Nuestras Cervezas
+      </h1>
     </div>
-    <div class="parrafooter">
-      <p>© Proyecto Final</p>
-    </div>
-  </footer>
+  </section>
+
+   <!-- Clara -->
+
+   <section class="clara container-fluid">
+    <article class="artclara container">
+      <div class="row mt-2 pe-2 d-flex justify-content-md-center">
+        <div class="col-sm-10 col-md-10 col-lg-5 col-xl-5 ">
+          <h2>Desde nuestros inicios, trabajamos por hacer
+            cervezas que te llenen de confianza y valor.</h2>
+
+          <p> Siempre estamos un paso adelante llevando nuestras cervezas mas allá de lo tradicional. Estamos comprometidos en
+            diversificar la oferta cervecera en Colombia.</p>
+        </div>
+        <div class="imgclara col-sm-10 col-md-10 col-lg-5 col-xl-5 d-flex justify-content-md-center">
+          <img src="../Imagenes/NuestrasCervezas/Clara.svg" class="img-fluid rounded mx-auto d-block" alt="CervezaClara">
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+
+
+ <!-- Footer -->
+ <footer class=" container-fluid">
+  <div class="imgfooter">
+    <a href=""><img src="../logos/SVG/Facebook.svg" alt="FacebookLogo"></a>
+    <a href=""><img src="../logos/SVG/Instagram.svg" alt="InstagramLogo"></a>
+    <a href=""><img src="../logos/SVG/Twitter.svg" alt="TwitterLogo"></a>
+  </div>
+  <div class="parrafooter">
+    <p>© CERVECERIA SAN NICOLAS</p>
+  </div>
+</footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
