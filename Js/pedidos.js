@@ -48,7 +48,10 @@ function miFunc() {
 }
 
 function decrementars() {
-    valor = document.getElementById("items ");
-    4
+    valor = document.getElementById("items");
     if (valor.value > 01) valor.value--;
+}
+
+function totalCervezas() {
+
 }
