@@ -165,7 +165,7 @@
         <div class="col-12 col-sm-4 ">
             <div class=" ">
                 <h5>Rubia</h5>
-                <button class="btn-input" id="aumentar" type="button" onclick="decrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                <button class="btn-input" id="aumentar" type="button" onclick="decrementar(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
                 <input class="ipt" type="text" value="0" id="item" name="item" required>
                 
@@ -197,7 +197,7 @@
     <div class="row mt-5">
         <div class="col">
             <h5>Total Cervezas</h5>
-            <p name="total" value="0">0</p>
+            <p name="total" id="total">0</p>
         </div>
     </div>
 

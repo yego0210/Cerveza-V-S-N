@@ -53,5 +53,7 @@ function decrementars() {
 }
 
 function totalCervezas() {
+    var rubia = parseInt(documement.getElementById('item').value);
+    console.log(rubia)
 
 }
