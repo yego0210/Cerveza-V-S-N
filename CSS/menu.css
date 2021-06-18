@@ -6,6 +6,19 @@ header {
     z-index: 200;
 }
 
+.menu1{
+    background-color: white;
+}
+
+.tipografia{
+    color: #89640a;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Gruppo', cursive;
+
+
+}
+
 .menu1 {
     background-color: #dbc28a;
     /**/
@@ -20,3 +33,4 @@ header {
 footer {
     margin-top: 600px;
 }
+
