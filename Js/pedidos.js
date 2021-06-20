@@ -57,3 +57,11 @@ function totalCervezas() {
     console.log(rubia)
 
 }
+
+
+
+
+function totalCervezas() {
+    rubia = document.getElementById('aumentar')
+
+}
