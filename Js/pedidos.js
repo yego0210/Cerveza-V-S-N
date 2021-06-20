@@ -3,6 +3,11 @@ function incrementar() {
     valor = document.getElementById("item");
     if (valor.value < 100) valor.value++;
 
+    valorr = value++;
+
+
+
+
 }
 
 function miFunc() {
@@ -63,11 +68,13 @@ function totalCervezas() {
 
 
 function totalCervezas() {
-    rubia = document.getElementById('item').value;
-    morena = document.getElementById('itemm').value;
-    clara = document.getElementById('items').value
-    var totall = rubia + morena;
-    Document.getElementById('total').value = totall;
+    var rubia = document.getElementById('item').value;
+    var morena = document.getElementById('itemm').value;
+    var clara = document.getElementById('items').value
+
+    var totall = parseInt(rubia) + parseInt(morena) + parseInt(clara);
+
+    document.getElementById('total').value = totall;
 
 
 

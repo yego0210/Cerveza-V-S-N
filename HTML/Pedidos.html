@@ -131,23 +131,26 @@
                 <div class="col-12 col-sm-4 ">
                     <div class=" ">
                         <h5>Rubia</h5>
-                        <button class="btn-input" id="rubia1" type="button" onclick="decrementar(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                        <button onchange="totalCervezas(this.value)" class="btn-input" id="rubia1" type="button" onclick="decrementar(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
                         <input class="ipt" type="text" value="0" id="item" name="item">
 
-                        <button value="suma" onclick="incrementar(), totalCervezas()" class="btn-input" id="rubia2" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                        <button value="suma" onclick="incrementar()" class="btn-input" id="rubia2" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
                     <div>
+
+
                         <h5>Morena</h5>
                         <button class="btn-input" id="aumentar" type="button" onclick="decrementarr() " class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                        <input class="ipt" type="text" value="0" id="itemm" name="itemm">
+                        <input onchange="totalCervezas(this.value)" class="ipt" type="text" value="0" id="itemm" name="itemm">
 
                         <button class="btn-input" id="desminuir" type="button" onclick="incrementarr(), totalCervezas() " class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
+
 
                 <div class="col-12 col-sm-4">
                     <div>
@@ -156,15 +159,16 @@
 
                         <input class="ipt" type="text" value="0" id="items" name="item">
 
-                        <button class="btn-input" id="desminuir" type="button" onclick="incrementars(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                        <button class="btn-input" id="desminuir" type="button" onclick="incrementars(), totalCervezas()" onchange="totalCervezas(this.value)" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col">
+
                     <h5>Total Cervezas</h5>
                     <input class="ipt" type="text" value="0" id="total" name="total" required>
-                    <div id="">0</div>
+
                 </div>
             </div>
 
