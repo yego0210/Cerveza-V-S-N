@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <span>Valor #1</span>
+    <input type="text" id="suma1" onchange="sumar(this.value);" />
+    <br/>
+    <br/>
+    <span>Valor #2</span>
+    <input type="text" id="suma2" onchange="sumar(this.value);" />
+    <br/>
+    <br/>
+
+    <span>resultado</span>
+    <input type="text" id="suma3" onchange="sumar(this.value);" />
+    <br/>
+
+    <br/>
+    <input id="spTotal" type="submit" onclick="sumar()">
+
+
+    <script>
+        function sumar() {
+            var suma1 = document.getElementById('suma1').value;
+            var suma2 = document.getElementById('suma2').value;
+
+
+            var resultado = suma1 + suma2;
+
+            document.getElementById('suma3').value = resultado;
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
