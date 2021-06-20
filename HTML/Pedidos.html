@@ -83,6 +83,8 @@
                 <div class="col-12 col-sm-6 ">
                     <h5>Nombre <span style="color: red;">*</span></h5>
                     <input type="text" class="form-control" placeholder="¿Como te llamas?" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                    <h5>Correo <span style="color: red;">*</span></h5>
+                    <input type="email" class="form-control" placeholder="¿Correo Electronico?" aria-label="Recipient's username" aria-describedby="button-addon2" required />
                 </div>
             </div>
             <!-- termina nombre nombre-->
@@ -97,21 +99,20 @@
                 </div>
                 <div class="col-11 col-sm-6 ">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                  Botellas
-                </label>
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2"></label> Botellas
+                        </label>
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" required name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                   Barril 19 Litros
                 </label>
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" required name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                   Barril 50 Litros
                 </label>
@@ -130,11 +131,11 @@
                 <div class="col-12 col-sm-4 ">
                     <div class=" ">
                         <h5>Rubia</h5>
-                        <button class="btn-input" id="aumentar" type="button" onclick="decrementar(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+                        <button class="btn-input" id="rubia1" type="button" onclick="decrementar(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                        <input class="ipt" type="text" value="0" id="item" name="item" required>
+                        <input class="ipt" type="text" value="0" id="item" name="item">
 
-                        <button class="btn-input" id="desminuir" type="button" onclick="incrementar()" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                        <button value="suma" onclick="totalCervezas()" class="btn-input" id="rubia2" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-4">
@@ -142,9 +143,9 @@
                         <h5>Morena</h5>
                         <button class="btn-input" id="aumentar" type="button" onclick="decrementarr() " class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                        <input class="ipt" type="text" value="0" id="itemm" name="itemm" required>
+                        <input class="ipt" type="text" value="0" id="itemm" name="itemm">
 
-                        <button class="btn-input" id="desminuir" type="button" onclick="incrementarr() " class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                        <button class="btn-input" id="desminuir" type="button" onclick="incrementarr(), totalCervezas() " class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
 
@@ -153,16 +154,17 @@
                         <h5>Clara</h5>
                         <button class="btn-input" id="aumentar" type="button" onclick="decrementars()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
 
-                        <input class="ipt" type="text" value="0" id="items" name="item" required>
+                        <input class="ipt" type="text" value="0" id="items" name="item">
 
-                        <button class="btn-input" id="desminuir" type="button" onclick="incrementars()" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                        <button class="btn-input" id="desminuir" type="button" onclick="incrementars(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col">
                     <h5>Total Cervezas</h5>
-                    <p name="total" id="total">0</p>
+                    <input class="ipt" type="text" value="0" id="total" name="total" required>
+                    <div id="">0</div>
                 </div>
             </div>
 
@@ -194,13 +196,14 @@
                     </div>
                 </div>
             </div>
+            <input type="submit" value="Enviar pedido" class="btn btn-lg btn-dark mt-5 mb-5">
 
-            <button type="submit" class="btn btn-lg btn-dark mt-5 mb-5" onclick="makeAnOrder()">ENVIAR PEDIDO</button>
         </div>
 
         </form>
 
         </div>
+
 
     </section>
 

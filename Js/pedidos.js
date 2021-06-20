@@ -2,6 +2,7 @@
 function incrementar() {
     valor = document.getElementById("item");
     if (valor.value < 100) valor.value++;
+
 }
 
 function miFunc() {
@@ -62,6 +63,13 @@ function totalCervezas() {
 
 
 function totalCervezas() {
-    rubia = document.getElementById('aumentar')
+    rubia = document.getElementById('item').value;
+    morena = document.getElementById('itemm').value;
+    clara = document.getElementById('items').value
+    var totall = rubia + morena;
+    Document.getElementById('total').value = totall;
+
+
+
 
 }
