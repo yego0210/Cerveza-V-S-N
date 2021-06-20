@@ -72,7 +72,21 @@ function totalCervezas() {
     var morena = document.getElementById('itemm').value;
     var clara = document.getElementById('items').value
 
-    var totall = parseInt(rubia) + parseInt(morena) + parseInt(clara);
+    var totall = parseInt(morena) + parseInt(rubia) + parseInt(clara);
+
+    document.getElementById('total').value = totall;
+
+
+
+
+}
+
+function restaCervezas() {
+    var rubia = document.getElementById('item').value;
+    var morena = document.getElementById('itemm').value;
+    var clara = document.getElementById('items').value
+
+    var totall = parseInt(morena) - parseInt(rubia) - parseInt(clara);
 
     document.getElementById('total').value = totall;
 
