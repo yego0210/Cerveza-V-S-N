@@ -90,29 +90,12 @@ function restaCervezas() {
 
 }
 
-// ***********************
+// ********************************************************
 
-function relative_offset($element) {
-    var current_offset = $element.offset(),
-        screen_offset = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-        //.10 is realy relative to the use. Must be parametrable.
-        organic_offset = Math.round(screen_offset * .1),
-        absolute_offset = Math.round(current_offset.top);
-
-    $element.attr("data-sps-offset", (absolute_offset - screen_offset + organic_offset));
+const expresiones = {
+    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    password: /^.{4,12}$/, // 4 a 12 digitos.
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
-
-// use jquery for lazyness and offset() utils.
-$(document).ready(function() {
-    $(".animated.sps").each(function() {
-        relative_offset($(this));
-    });
-
-    window.addEventListener("resize", function() {
-        relative_offset($(this));
-    });
-
-    window.addEventListener("orientationchange", function() {
-        relative_offset($(this));
-    });
-});
