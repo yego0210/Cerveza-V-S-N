@@ -17,7 +17,7 @@ function decrementar() {
     if (valor.value > 00) valor.value--;
 }
 
-function makeAnOrder() {
+function btn() {
     document.write("<h2>Su pedido se está en curso...</h2>");
 }
 
