@@ -94,3 +94,30 @@ function restaCervezas() {
 
 
 }
+
+// ***********************
+
+function relative_offset($element) {
+    var current_offset = $element.offset(),
+        screen_offset = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+        //.10 is realy relative to the use. Must be parametrable.
+        organic_offset = Math.round(screen_offset * .1),
+        absolute_offset = Math.round(current_offset.top);
+
+    $element.attr("data-sps-offset", (absolute_offset - screen_offset + organic_offset));
+}
+
+// use jquery for lazyness and offset() utils.
+$(document).ready(function() {
+    $(".animated.sps").each(function() {
+        relative_offset($(this));
+    });
+
+    window.addEventListener("resize", function() {
+        relative_offset($(this));
+    });
+
+    window.addEventListener("orientationchange", function() {
+        relative_offset($(this));
+    });
+});

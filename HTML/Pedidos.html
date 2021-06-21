@@ -89,9 +89,9 @@
             </div>
             <!-- termina nombre nombre-->
 
-            <div class="row mt-5">
+            <div class="row mt-5 ">
                 <!--Empieza los barriles-->
-                <div class="col-11 col-sm-6">
+                <div class="col-11 col-sm-6 ">
                     <h6>Quieres pedir</h6>
                     <p>
                         Si deseas más de un barril, puedes agregar el siguiente barril en la última pregunta.
@@ -100,7 +100,7 @@
                 <div class="col-11 col-sm-6 ">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2"></label> Botellas
+                        <label class="form-check-label" for="flexRadioDefault1"></label> Botellas
                         </label>
                     </div>
 
@@ -127,8 +127,8 @@
                 <h6>¿Cuantas cervezas deseas de cada una?</h6>
                 <p>Recuerda que en el caso de botellas el pedido es de mínimo doce (12) cervezas totales.</p>
             </div>
-            <div class="row text-center mt-3">
-                <div class="col-12 col-sm-4 ">
+            <div class="row text-center ">
+                <div class="col-12 col-sm-4 mt-3 ">
                     <div class=" ">
                         <h5>Rubia</h5>
                         <button onchange=" restaCervezas(this.value)" class="btn-input" id="aumentar" type="button" onclick="decrementar(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
@@ -138,7 +138,7 @@
                         <button value="suma" onclick="incrementar(), totalCervezas()" class="btn-input" id="rubia2" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-4 mt-3">
                     <div>
 
 
@@ -152,7 +152,7 @@
                 </div>
 
 
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-4 mt-3">
                     <div>
                         <h5>Clara</h5>
                         <button class="btn-input" id="aumentar" type="button" onclick="decrementars(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
@@ -196,7 +196,7 @@
                     <h5>¿Algo más que debamos saber? <span style="color: red;">*</span></h5>
                     <div class="input-group">
 
-                        <textarea class="form-control" placeholder="nos puedes contar algun requerimiento especifico de tu pedido, o algun detalle de la dirección que debamos anotar" aria-label="With textarea" required></textarea>
+                        <textarea class="form-control" placeholder="Nos puedes contar algun requerimiento especifico de tu pedido, o algun detalle de la dirección que debamos anotar" aria-label="With textarea" required></textarea>
                     </div>
                 </div>
             </div>
