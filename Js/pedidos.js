@@ -17,9 +17,7 @@ function decrementar() {
     if (valor.value > 00) valor.value--;
 }
 
-function btn() {
-    document.write("<h2>Su pedido se está en curso...</h2>");
-}
+
 
 
 // *************Morena********************
