@@ -3,9 +3,6 @@ function incrementar() {
     valor = document.getElementById("item");
     if (valor.value < 100) valor.value++;
 
-    valorr = value++;
-
-
 
 
 }
