@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/pedidos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cerveceria</title>
 </head>
 
@@ -58,6 +59,28 @@
         </nav>
     </header>
 
+    <main>
+        <div class="">
+            <div class="row">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner col-12 col-sm-12">
+                        <div class="carousel-item active">
+                            <img class="Slides" src="../Imagenes/Pedidos/cervezas-artesanales-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <img class="Slides" src="../Imagenes/Pedidos/cervezas-artesanales-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="Slides" src="../Imagenes/Pedidos/cervezas-artesanales-2.jpg" class="d-block w-100" alt="...">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- continer -->
+    </main>
 
 
     <section class="contenedor">
@@ -65,7 +88,7 @@
         <div class="container text-center row-12   ">
             <form action="" class="formulario" id="formulario" class="row g-3 ">
                 <div class="row ">
-                    <div class="col-12 col-sm-12 p-5 ">
+                    <div class="col-12 col-sm-12 p-5" data-aos="fade-down-left" data-aos-duration="3000">
                         <h1 class="font">AGENDA YA TU PEDIDO</h1>
                         <p class="font-2">
                             Llena el formulario con tus datos y la información de tu pedido, nosotros te <br> llamamos para confirmarlo
@@ -76,7 +99,7 @@
         </div>
 
         <!-- input -->
-        <div class="container conte col-11 col-lg-8">
+        <div class="container conte col-11 col-lg-8" data-aos="fade-down-right" data-aos-duration="3000">
             <!-- Empieza nombre nombre-->
             <div class="row ">
                 <div class="col-12 col-sm-6 ">
@@ -131,7 +154,7 @@
                 <p>Recuerda que en el caso de botellas el pedido es de mínimo doce (12) cervezas totales.</p>
             </div>
             <div class="row text-center ">
-                <div class="col-12 col-sm-4 mt-3 ">
+                <div class="col-12 col-sm-4 mt-3 " data-aos="zoom-out-down" data-aos-duration="1000">
                     <div>
                         <h5 class="h5_font">Rubia</h5>
                         <button onchange=" restaCervezas(this.value)" class="btn-input" id="aumentar" type="button" onclick="decrementar(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
@@ -141,7 +164,7 @@
                         <button value="suma" onclick="incrementar(), totalCervezas()" class="btn-input" id="desminuir" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 mt-3">
+                <div class="col-12 col-sm-4 mt-3" data-aos="zoom-out-down" data-aos-duration="1000">
                     <div>
 
 
@@ -155,7 +178,7 @@
                 </div>
 
 
-                <div class="col-12 col-sm-4 mt-3">
+                <div class="col-12 col-sm-4 mt-3" data-aos="zoom-out-down" data-aos-duration="1000">
                     <div>
                         <h5 class="h5_font">Clara</h5>
                         <button class="btn-input" id="aumentar" type="button" onclick="decrementars(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
@@ -243,6 +266,10 @@
 
     <script src="../Js/pedidos.js"></script>
     <script src="../Js/scrollPosStyler.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
