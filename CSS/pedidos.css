@@ -33,8 +33,9 @@ body {
     margin-top: 100px;
 } */
 
-.imgportada img {
+.imgportada {
     background-image: url('/Imagenes/Pedidos/imagen1.jpg');
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
 }
