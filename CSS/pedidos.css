@@ -6,9 +6,16 @@ body {
 
 /* ***************portada********************** */
 
-.Slides {
+#hero-container {
     height: 600px;
-    width: 100%;
+}
+
+#hero-background {
+    background-color: #14171d;
+    position: absolute;
+    width: 0;
+    height: 600px;
+    transition: 1s ease-in-out;
 }
 
 
@@ -16,6 +23,8 @@ body {
 
 .contenedor {
     margin-top: 300px;
+    background-color: #EfB810;
+    padding-bottom: 100px;
 }
 
 .btn-input {
@@ -44,10 +53,11 @@ body {
     border-radius: 20px;
 }
 
-section {
+
+/* section {
     background-color: #EfB810;
     padding-bottom: 100px;
-}
+} */
 
 .agenda {
     background-color: #EfB810;
@@ -92,7 +102,7 @@ section {
 }
 
 
-/* ************************************************* */
+/* ********************** Animacion Header *************************** */
 
 .sps {
     padding: 0.80em .5em;
@@ -112,3 +122,6 @@ section {
     background-color: #333;
     color: #fff;
 }
+
+
+/* ********************************************************** */
