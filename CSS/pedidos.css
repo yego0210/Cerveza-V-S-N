@@ -42,11 +42,12 @@ body {
 } */
 
 .sectionportada {
-    margin-top: 130px;
+    margin-top: 150px;
 }
 
-.imgslider {
-    height: 600px;
+.porImg img {
+    height: 500px;
+    margin-top: 70px;
 }
 
 .carousel-caption {
@@ -59,14 +60,18 @@ body {
     /* width: 800px; */
 }
 
+.portxt {
+    margin-top: 200px;
+}
+
 .h-por {
     font-size: 40px;
-    color: white;
+    color: black;
     font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
 .p-por {
-    color: white;
+    color: black;
     font-size: 60px;
     font-family: 'Big Shoulders Stencil Display', cursive;
 }
@@ -162,7 +167,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    transition: all 0.25s ease;
+    transition: all 1s ease;
     width: 100%;
 }
 
