@@ -374,8 +374,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #EFB810;
-    /* color: #24b7a4; */
+    /* color: #EFB810; */
+    color: #24b7a4;
 }
 
 .navbar .getstarted {
