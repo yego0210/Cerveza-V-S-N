@@ -13,6 +13,31 @@
 }
 
 
+/* ********************** Animacion Header *************************** */
+
+.sps {
+    padding: 0.80em .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.sps--abv {
+    background-color: transparent;
+    color: #000;
+}
+
+.sps--blw {
+    background-color: while;
+    color: #fff;
+}
+
+
+/* ********************************************************** *
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
