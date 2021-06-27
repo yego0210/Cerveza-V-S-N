@@ -183,3 +183,11 @@ body {
 
 
 /* ********************************************************** */
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #EFB810;
+    /* color: #24b7a4; */
+}
