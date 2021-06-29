@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/menu.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/pedidos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Cerveceria</title>
+</head>
+
+<body>
+
+    <!-- header menu principal -->
+    <header>
+        <nav class="navbar navbar-expand-lg  menu1 sps sps--abv">
+            <div class="container-fluid">
+                <div>
+
+                    <a class="navbar-brand" href="../HTML/index.html">
+                        <img src="../logos/SVG/logo.svg" alt="LogoSanNicolas" width="100" height="100">
+                        <img src="../logos/SVG/Titulo.svg" alt="LogoSanNicolas" width="100" height="100">
+                    </a>
+
+                </div>
+                <!-- <a class="navbar-brand text-center tipografia link-dark" href="#">Cerveceria <br> San Nicolas</a> -->
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ms-3 ">
+                            <a class="nav-link  tipografia link-dark" aria-current="page" href="../HTML/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link tipografia link-dark" href="../HTML/NuestrasCervezas.html">Nuestras Cervezas</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link tipografia link-dark active" href="../HTML/Pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link tipografia link-dark" href="../HTML/QuienesSomos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link tipografia link-dark" href="../HTML/Contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======================================== SECTION PORTADA ============================================ -->
+    <section class="sectionportada">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-sm-8 portxt text-center ">
+                    <p class="h-por">HASTA LA PUERTA DE TU CASA</p>
+                    <h5 class="p-por">TE LLEVAMOS NUESTRAS CERVEZAS </h5>
+                </div>
+
+                <div class="col-12 col col-sm-4 porImg text-center ">
+                    <img src="/Imagenes/Pedidos/Asset 17.svg" alt="">
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+    </section>
+
+    <!-- ************************** section  formulario*************** -->
+    <section class="contenedor">
+
+        <div class="container text-center row-12   ">
+            <form action="" class="formulario" id="formulario" class="row g-3 ">
+                <div class="row ">
+                    <div class="col-12 col-sm-12 p-5" data-aos="fade-down-left" data-aos-duration="3000">
+                        <h1 class="font">AGENDA YA TU PEDIDO</h1>
+                        <p class="font-2">
+                            Llena el formulario con tus datos y la información de tu pedido, nosotros te <br> llamamos para confirmarlo
+                        </p>
+                        <p class="font-3">También puedes comunicarte vía WhatsApp al +57 317 3824538.</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- input -->
+        <div class="container conte col-11 col-lg-8" data-aos="fade-down-right" data-aos-duration="3000">
+            <!-- Empieza nombre nombre-->
+            <div class="row ">
+                <div class="col-12 col-sm-6 ">
+                    <h6 class="negrita">¿listo para empezar tu experiencia</h6>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                    <h5>Nombre <span style="color: red;">*</span></h5>
+                    <input type="text" class="form-control" placeholder="¿Como te llamas?" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                    <h5 class="mt-3">Correo <span style="color: red;">*</span></h5>
+                    <input type="email" class="form-control" placeholder="¿Correo Electronico?" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                </div>
+            </div>
+            <!-- termina nombre nombre-->
+
+            <div class="row mt-5 ">
+                <!--Empieza los barriles-->
+                <div class="col-11 col-sm-6 ">
+                    <h6 class="negrita">Quieres pedir</h6>
+                    <p>
+                        Si deseas más de un barril, puedes agregar el siguiente barril en la última pregunta.
+                    </p>
+                </div>
+                <div class="col-11 col-sm-6 ">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Botellas
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Barril 19 Litros
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Barril 50 Litros
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row mt-5">
+                <div class="col"></div>
+                <h6 class="negrita">¿Cuantas cervezas deseas de cada una?</h6>
+                <p>Recuerda que en el caso de botellas el pedido es de mínimo doce (12) cervezas totales.</p>
+            </div>
+            <div class="row text-center ">
+                <div class="col-12 col-sm-4 mt-3 " data-aos="zoom-out-down" data-aos-duration="1000">
+                    <div>
+                        <h5 class="h5_font">Rubia</h5>
+                        <button onchange=" restaCervezas(this.value)" class="btn-input" id="aumentar" type="button" onclick="decrementar(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+
+                        <input class="ipt" type="text" value="0" id="item" name="item">
+
+                        <button value="suma" onclick="incrementar(), totalCervezas()" class="btn-input" id="desminuir" type="button" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 mt-3" data-aos="zoom-out-down" data-aos-duration="1000">
+                    <div>
+
+
+                        <h5 class="h5_font">Morena</h5>
+                        <button class="btn-input" id="aumentar" type="button" onclick="decrementarr(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+
+                        <input class="ipt" type="text" value="0" id="itemm" name="itemm">
+
+                        <button class="btn-input" id="desminuir" type="button" onclick="incrementarr(), totalCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-4 mt-3" data-aos="zoom-out-down" data-aos-duration="1000">
+                    <div>
+                        <h5 class="h5_font">Clara</h5>
+                        <button class="btn-input" id="aumentar" type="button" onclick="decrementars(), restaCervezas()" class="c-icon-button c-number-value" style="background-color:#F9ECC7" tabindex="-1">-</button>
+
+                        <input class="ipt" type="text" value="0" id="items" name="item">
+
+                        <button class="btn-input" id="desminuir" type="button" onclick="incrementars(), totalCervezas()" onchange="totalCervezas(this.value)" class="c-icon-button c-number-value" style="background-color:#F9ECC7">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+
+
+                    <h5 class="negrita">Total Cervezas</h5>
+                    <input class="ipt" type="text" value="0" id="total" name="total" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h5 class="negrita">¿A qué dirección quieres que llevemos tus artesanales? necesario
+                        <span style="color: red;">*</span></h5>
+                    <div class="input-group">
+
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Escriba tu direccion de entrega" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <h5 class="negrita">¿A qué teléfono podemos contactarte? necesario <span style="color: red;">*</span></h5>
+                    <input type="tel" class="form-control" placeholder="Celular o telefono" aria-label="Example text with button addon" aria-describedby="button-addon1" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mt-3">
+                    <h5 class="negrita">¿Algo más que debamos saber? <span style="color: red;">*</span></h5>
+                    <div class="input-group">
+
+                        <textarea class="form-control" placeholder="Nos puedes contar algun requerimiento especifico de tu pedido, o algun detalle de la dirección que debamos anotar" aria-label="With textarea" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Enviar pedido" class="btn btn-lg btn-dark mt-5 mb-5" onclick="btn()">
+
+        </div>
+
+        </form>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid">
+        <div class="imgfooter">
+            <a href=""><img src="../logos/SVG/Facebook.svg" alt="FacebookLogo" /></a>
+            <a href=""><img src="../logos/SVG/Instagram.svg" alt="InstagramLogo" /></a>
+            <a href=""><img src="../logos/SVG/Twitter.svg" alt="TwitterLogo" /></a>
+        </div>
+        <div class="parrafooter">
+            <p>© Proyecto Final</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="../Js/pedidos.js"></script>
+    <script src="../Js/scrollPosStyler.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

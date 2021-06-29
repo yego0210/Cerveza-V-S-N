@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -7,16 +7,16 @@ header{
 }
 
 .menu1{
-    background-color: #5e5f5cc7;
+    background-color: white;
 }
 
 .tipografia{
-    color: #664c34;
-    font-size: 20px;
+    color: #89640a;
+    font-size: 22px;
     text-decoration: none;
+    font-family: 'Gruppo', cursive;
+
 
 }
 
-footer{
-    margin-top: 600px;
-}
+
