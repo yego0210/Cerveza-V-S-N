@@ -151,7 +151,7 @@ body {
     font-size: 25px;
 }
 
-.negrita {
+/* .negrita {
     font-weight: 600;
 }
 
@@ -162,7 +162,7 @@ body {
 
 /* ********************** Animacion Header *************************** */
 
-.sps {
+/* .sps {
     padding: 0.80em .5em;
     position: fixed;
     top: 0;
@@ -179,15 +179,14 @@ body {
 .sps--blw {
     background-color: while;
     color: #fff;
-}
+} */
 
 
 /* ********************************************************** */
 
-.navbar a:hover,
+/* .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
     color: #EFB810;
     /* color: #24b7a4; */
-}
