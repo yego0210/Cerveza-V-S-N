@@ -232,7 +232,8 @@ h6 {
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #24b7a4;
+    background: #EFB810;
+    /* #24b7a4 */
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
@@ -319,8 +320,9 @@ h6 {
 }
 
 #header .social-links a:hover {
-    background: #24b7a4;
-    border-color: #24b7a4;
+    background: #EFB810;
+    border-color: #EFB810;
+    /* #24b7a4 */
 }
 
 
@@ -374,8 +376,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    /* color: #EFB810; */
-    color: #24b7a4;
+    color: #EFB810;
+    /* color: #24b7a4; */
 }
 
 .navbar .getstarted {
@@ -652,8 +654,9 @@ section {
 --------------------------------------------------------------*/
 
 .contact .info {
-    border-top: 3px solid #24b7a4;
-    border-bottom: 3px solid #24b7a4;
+    border-top: 3px solid #EFB810;
+    /* #24b7a4 */
+    border-bottom: 3px solid #EFB810;
     padding: 30px;
     background: rgba(255, 255, 255, 0.06);
     width: 100%;
@@ -724,8 +727,9 @@ section {
 
 .contact .php-email-form {
     width: 100%;
-    border-top: 3px solid #24b7a4;
-    border-bottom: 3px solid #24b7a4;
+    border-top: 3px solid #EFB810;
+    /* #24b7a4 */
+    border-bottom: 3px solid #EFB810;
     padding: 30px;
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -801,7 +805,8 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #24b7a4;
+    background: #EFB810;
+    /* #24b7a4 */
     border: 0;
     padding: 10px 24px;
     color: #fff;
