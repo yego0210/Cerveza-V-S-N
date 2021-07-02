@@ -2,11 +2,11 @@
 const Pedido = require('../models/Pedido.js')
 
 // Crear
-function create(request,response){
+function create(request, response) {
 
     var params = request.body;
     console.log(params)
-    
+
     var pedido = new Pedido();
 
     pedido.nombre = params.nombre;
@@ -19,19 +19,19 @@ function create(request,response){
     pedido.direccion = params.direccion;
     pedido.telefono = params.telefono;
     pedido.comentario = params.comentario;
-    
 
-    pedido.save((error,pedidocreate) =>{
-        if(error){
-            response.status(500).send({mensaje:"se presento un error en el servidor"})
-        }else{
-            response.status(200).send({mensaje:"Pedido almacenado"})
+
+    pedido.save((error, pedidocreate) => {
+        if (error) {
+            response.status(500).send({ mensaje: "se presento un error en el servidor" })
+        } else {
+            response.status(200).send({ mensaje: "Pedido almacenado" })
         }
     })
 }
 
 // Actualizar
-function updateOrden(request,response){
+function updateOrden(request, response) {
 
     var params = request.body;
     var idPedido = params.idPedido;
@@ -39,46 +39,46 @@ function updateOrden(request,response){
     console.log(idPedido)
     console.log(params)
 
-    Pedido.findByIdAndUpdate(idPedido,params,function(error,ordenupdate){
-        if(error){
-            response.status(500).send({mensaje:"se presento un error en el servidor"})
-        }else{
-            response.status(200).send({mensaje:"Pedido actualizado"})
+    Pedido.findByIdAndUpdate(idPedido, params, function(error, ordenupdate) {
+        if (error) {
+            response.status(500).send({ mensaje: "se presento un error en el servidor" })
+        } else {
+            response.status(200).send({ mensaje: "Pedido actualizado" })
         }
     })
 }
 
 // borrar
 
-function deleteOrden(request,response){
+function deleteOrden(request, response) {
 
     var idPedido = request.body.idPedido;
 
     console.log(idPedido)
-    
 
-    Pedido.findByIdAndDelete(idPedido,function(error,ordedelete){
-        if(error){
-            response.status(500).send({mensaje:"se presento un error en el servidor"})
-        }else{
-            response.status(200).send({mensaje:"Usuario eliminado"})
+
+    Pedido.findByIdAndDelete(idPedido, function(error, ordedelete) {
+        if (error) {
+            response.status(500).send({ mensaje: "se presento un error en el servidor" })
+        } else {
+            response.status(200).send({ mensaje: "Usuario eliminado" })
         }
     })
 }
 
 // Listar
-function listar(request,response){
+function listar(request, response) {
 
-    var filtro = request.body.total;
+    var filtro = request.body;
 
-    Pedido.find({total:filtro},(error,listapedidos) => {
-        if(error){
-            response.status(500).send({mensaje:"error en el servidor"})
-        }else{
+    Pedido.find({}, (error, listapedidos) => {
+        if (error) {
+            response.status(500).send({ mensaje: "error en el servidor" })
+        } else {
             response.status(200).send(listapedidos)
         }
     })
-    }
+}
 
 module.exports = {
     create,
