@@ -44,7 +44,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #000;
     /* background: url("../Imagenes/Contactos/bg.jpg") top center no-repeat; */
     background-size: cover;
     position: relative;
@@ -586,7 +586,7 @@ section {
 }
 
 .section-bg {
-    background-color: #d8f7f3;
+    background-color: #0b0c0c;
 }
 
 .section-title {
@@ -601,6 +601,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    color: #0b0c0c;
 }
 
 .section-title h2::after {
@@ -636,7 +637,7 @@ section {
 }
 
 .about .icon i {
-    color: #fff;
+    color: #EFB810;
     font-size: 42px;
     line-height: 0;
 }
@@ -649,7 +650,7 @@ section {
 }
 
 .about .title a {
-    color: #fff;
+    color: #EFB810;
     transition: 0.3s;
 }
 
