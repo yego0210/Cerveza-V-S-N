@@ -45,7 +45,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #fff;
-    background: url("../Imagenes/Contactos/bg.jpg") top center no-repeat;
+    /* background: url("../Imagenes/Contactos/bg.jpg") top center no-repeat; */
     background-size: cover;
     position: relative;
 }
@@ -57,7 +57,7 @@ body::before {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(49, 71, 89, 0.6);
+    /* background: rgba(49, 71, 89, 0.6); */
 }
 
 .header-principal {
@@ -203,7 +203,7 @@ h6 {
 #header .subscribe h4 {
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
+    color: #000 ;
     position: relative;
     padding-bottom: 12px;
 }
@@ -216,26 +216,34 @@ h6 {
     position: relative;
     border-radius: 50px;
     text-align: left;
+    background-color: #EFB810 ;
+    
+    
 }
+
 
 #header .subscribe .subscribe-form input[type="email"] {
     border: 0;
     padding: 4px 8px;
     width: calc(100% - 100px);
+    border-radius: 50px;
+    
 }
 
 #header .subscribe .subscribe-form input[type="submit"] {
+    
     position: absolute;
     top: 0;
-    right: -2px;
+    right: -10px;
     bottom: 0;
     border: 0;
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #EFB810;
+    background: #fff;
+    border: 3px solid #EFB810;
     /* #24b7a4 */
-    color: #fff;
+    /* color: #fff; */
     transition: 0.3s;
     border-radius: 50px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -304,13 +312,13 @@ h6 {
 
 #header .social-links a {
     font-size: 16px;
-    color: #fff;
+    color: #EFB810;
     margin: 0 3px;
     border-radius: 50%;
     width: 48px;
     height: 48px;
     transition: 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #EFB810;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -321,8 +329,8 @@ h6 {
 }
 
 #header .social-links a:hover {
-    background: #EFB810;
-    border-color: #EFB810;
+    background: #24b7a4 ;
+    border-color: #24b7a4 ;
     /* #24b7a4 */
 }
 
@@ -656,11 +664,13 @@ section {
 --------------------------------------------------------------*/
 
 .contact .info {
-    border-top: 3px solid #EFB810;
+    /* border-top: 3px solid #24b7a4 ; */
     /* #24b7a4 */
-    border-bottom: 3px solid #EFB810;
+    /* border-bottom: 3px solid #24b7a4 ; */
+    /* #EFB810 */
     padding: 30px;
-    background: rgba(255, 255, 255, 0.06);
+    background-color: #EFB810 ;
+    /* background: rgba(255, 255, 255, 0.06); */
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -704,7 +714,7 @@ section {
     font-size: 18px;
     display: inline-block;
     background: #333;
-    color: #fff;
+    color: #EFB810;
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -713,6 +723,7 @@ section {
     height: 36px;
     transition: 0.3s;
     margin-right: 10px;
+    
 }
 
 .contact .info .social-links a:hover {
@@ -735,7 +746,8 @@ section {
     /* #24b7a4 */
     border-bottom: 3px solid #EFB810;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.06);
+    background-color: #EFB810 ;
+    /* background: rgba(255, 255, 255, 0.06); */
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
