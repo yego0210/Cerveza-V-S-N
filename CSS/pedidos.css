@@ -151,42 +151,4 @@ body {
     font-size: 25px;
 }
 
-/* .negrita {
-    font-weight: 600;
-}
 
-.negrita {
-    font-weight: 600;
-}
-
-
-/* ********************** Animacion Header *************************** */
-
-/* .sps {
-    padding: 0.80em .5em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all 1s ease;
-    width: 100%;
-}
-
-.sps--abv {
-    background-color: transparent;
-    color: #000;
-}
-
-.sps--blw {
-    background-color: while;
-    color: #fff;
-} */
-
-
-/* ********************************************************** */
-
-/* .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-    color: #EFB810;
-    /* color: #24b7a4; */
